@@ -22,3 +22,9 @@ cd /srv/share/example
 python ~/bin/simplegallery.py
 ```
 All images in the given folder will be served as a web page at port 80 `http://localhost`.
+
+## Options
+Port can be specified with the `-p` flag:
+```
+python ~/bin/simplegallery.py -p 80
+```
