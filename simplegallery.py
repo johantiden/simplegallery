@@ -4,6 +4,9 @@ from pathlib import Path
 import os
 import argparse
 
+__author__ = "Johan Tidén"
+__license__ = "GPL-3.0"
+
 workingDir = os.getcwd()
 
 app = Flask(
