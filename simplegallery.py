@@ -10,8 +10,6 @@ app = Flask(
 )
 
 def listImages():
-
-
     fileTypes = ['*.png', '*.jpg', '*.gif', '*.webp']
     images = [f for f_ in [Path('').rglob(e) for e in fileTypes] for f in f_]
     for filepath in images:
@@ -29,7 +27,7 @@ def index():
         '''
         <html>
             <head>
-                <title>Temporary image server</title>
+                <title>simplegallery - {{ workingDir }}</title>
                 <style>
                     body {
                         background-color: #DDDDDD
@@ -65,9 +63,6 @@ def index():
         '''
     )
     return t.render(images=images, workingDir=workingDir)
-
-
-
 
 if __name__ == '__main__':
 
