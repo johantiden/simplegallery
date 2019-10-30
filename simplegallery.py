@@ -1,6 +1,5 @@
 from flask import Flask, send_from_directory
 from jinja2 import Template
-import glob
 from pathlib import Path
 import os
 
