@@ -21,7 +21,7 @@ Go to a folder you would like to share e.g. `/srv/share/example` and just run th
 cd /srv/share/example
 python ~/bin/simplegallery.py
 ```
-All images in the given folder will be served as a web page at port 80 `http://localhost`.
+All images in the given folder will be served as a web page at port 8080 `http://localhost:8080`.
 
 ## Options
 Port can be specified with the `-p` flag:
