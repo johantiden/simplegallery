@@ -66,7 +66,7 @@ def index():
     return t.render(images=images, workingDir=workingDir)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='A tutorial of argparse!')
+    parser = argparse.ArgumentParser()
     parser.add_argument("-p")
 
     args = parser.parse_args()
