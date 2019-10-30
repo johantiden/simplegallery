@@ -2,6 +2,7 @@ from flask import Flask, send_from_directory
 from jinja2 import Template
 from pathlib import Path
 import os
+import argparse
 
 workingDir = os.getcwd()
 
@@ -65,8 +66,15 @@ def index():
     return t.render(images=images, workingDir=workingDir)
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser(description='A tutorial of argparse!')
+    parser.add_argument("-p")
+
+    args = parser.parse_args()
+    port = args.p
+    if port is None:
+        port = 8080
 
     app.run(
         host='0.0.0.0',
-        port=80)
+        port=port)
 
